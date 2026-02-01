@@ -30,6 +30,7 @@ lerna-debug.log*
 .idea
 .cursor
 .docs
+.turbo
 *.swp
 *.swo
 *~

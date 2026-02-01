@@ -3,8 +3,14 @@
   "version": "0.0.1",
   "private": true,
   "type": "module",
+  "packageManager": "pnpm@10.24.0",
   "scripts": {
-    "lint": "oxlint --fix",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "test:root": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "turbo run lint",
     "format": "oxfmt",
     "prepare": "husky"
   },
@@ -22,9 +28,14 @@
   "devDependencies": {
     "@commitlint/cli": "^20.4.0",
     "@commitlint/config-conventional": "^20.4.0",
+    "@types/node": "^25.1.0",
+    "@vitest/coverage-v8": "^4.0.18",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "oxfmt": "^0.27.0",
-    "oxlint": "^1.42.0"
+    "oxlint": "^1.42.0",
+    "turbo": "^2.8.1",
+    "vitest": "^4.0.18",
+    "yaml": "^2.8.2"
   }
 }

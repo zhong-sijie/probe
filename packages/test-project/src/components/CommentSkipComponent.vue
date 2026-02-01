@@ -2,6 +2,8 @@
 import { ref } from "vue";
 
 const title = ref("注释跳过测试");
+// 这个变量用于测试场景，虽然未在模板中使用，但保留用于测试提取功能
+console.log(title.value);
 </script>
 
 <template>
@@ -38,9 +40,13 @@ const title = ref("注释跳过测试");
 // 脚本中的注释跳过测试
 // i18n-ignore
 const ignoredText = "这段代码中的文本应该被跳过";
+// 这个变量用于测试场景，虽然未使用，但保留用于测试提取功能
+void ignoredText;
 
 // 正常提取的文本
 const normalText = "这段文本应该被提取";
+// 这个变量用于测试场景，虽然未使用，但保留用于测试提取功能
+void normalText;
 </script>
 
 <style scoped>

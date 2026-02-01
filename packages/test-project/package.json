@@ -1,5 +1,5 @@
 {
-  "name": "test-project",
+  "name": "@probe/test-project",
   "private": true,
   "type": "module",
   "scripts": {

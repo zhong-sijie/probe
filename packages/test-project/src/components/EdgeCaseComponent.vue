@@ -8,8 +8,12 @@ const mixedContent = ref("Hello 世界");
 const name = ref("用户");
 const count = ref(5);
 const total = ref(100);
+// 这些变量用于测试场景，虽然未在模板中使用，但保留用于测试提取功能
+void total;
 const price = ref(99.99);
 const pages = ref(10);
+// 这些变量用于测试场景，虽然未在模板中使用，但保留用于测试提取功能
+void pages;
 </script>
 
 <template>

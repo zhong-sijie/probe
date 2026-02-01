@@ -8,11 +8,19 @@ const price = ref(99.99);
 
 // 模板字符串中的变量
 const templateString1 = `总共统计 ${count.value} 条记录`;
+// 这些变量用于测试场景，虽然未在模板中使用，但保留用于测试提取功能
+void templateString1;
 const templateString2 = `共 ${count.value} 条，${total.value} 页`;
+// 这些变量用于测试场景，虽然未在模板中使用，但保留用于测试提取功能
+void templateString2;
 const templateString3 = `用户 ${name.value} 购买了 ${count.value} 件商品，总价 ${price.value} 元`;
+// 这些变量用于测试场景，虽然未在模板中使用，但保留用于测试提取功能
+void templateString3;
 
 // 脚本中的模板字符串（包含变量）
 const message = `这是包含 ${count.value} 个变量的消息`;
+// 这些变量用于测试场景，虽然未在模板中使用，但保留用于测试提取功能
+void message;
 </script>
 
 <template>
